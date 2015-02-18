@@ -54,15 +54,15 @@ TSPoint TouchScreen::getPoint(void) {
   uint8_t i, valid;
   
 
-  uint8_t xp_port = digitalPinToPort(_xp);
-  uint8_t yp_port = digitalPinToPort(_yp);
-  uint8_t xm_port = digitalPinToPort(_xm);
-  uint8_t ym_port = digitalPinToPort(_ym);
+  Pio* xp_port = digitalPinToPort(_xp);
+  Pio* yp_port = digitalPinToPort(_yp);
+  Pio* xm_port = digitalPinToPort(_xm);
+  Pio* ym_port = digitalPinToPort(_ym);
 
-  uint8_t xp_pin = digitalPinToBitMask(_xp);
-  uint8_t yp_pin = digitalPinToBitMask(_yp);
-  uint8_t xm_pin = digitalPinToBitMask(_xm);
-  uint8_t ym_pin = digitalPinToBitMask(_ym);
+  Pio* xp_pin = digitalPinToBitMask(_xp);
+  Pio* yp_pin = digitalPinToBitMask(_yp);
+  Pio* xm_pin = digitalPinToBitMask(_xm);
+  Pio* ym_pin = digitalPinToBitMask(_ym);
 
 
   valid = 1;
